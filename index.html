@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Fitness Folly</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700&family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+	</head>
+	<body>
+		<header class="sticky-header">
+			<img src="./assets/logo.png" id="header-logo" />
+			<nav id="main-nav">
+				<a onclick="scrollToElementWithOffset('pt-area')">PERSONAL TRAINING</a>
+				<a onclick="scrollToElementWithOffset('health-and-nutrition')"
+					>HEALTH & NUTRITION</a
+				>
+				<a onclick="scrollToElementWithOffset('contact-area')">GET IN TOUCH</a>
+			</nav>
+			<div class="menu-icon" id="menu-icon">
+				<div class="bar" id="bar1"></div>
+				<div class="bar" id="bar2"></div>
+			</div>
+			<div id="scroll-display"></div>
+		</header>
+		<div id="mobile-nav">
+			<div id="mobile-nav-wrapper">
+				<div class="mobile-nav-btn" onclick="mobileNav('intro-area')">
+					<img src="./assets/arm-muscle.png" />
+					<p>ABOUT ME</p>
+				</div>
+				<div class="mobile-nav-btn" onclick="mobileNav('pt-area')">
+					<img src="./assets/run.png" />
+					<p>PERSONAL TRAINING</p>
+				</div>
+				<div class="mobile-nav-btn" onclick="mobileNav('health-and-nutrition')">
+					<img src="./assets/wellness.png" />
+					<p>HEALTH & NUTRITION</p>
+				</div>
+				<div class="mobile-nav-btn" onclick="mobileNav('contact-area')">
+					<img src="./assets/paper-plane.png" />
+					<p>GET IN TOUCH</p>
+				</div>
+			</div>
+		</div>
+		<div id="landing-area">
+			<div id="landing-content">
+				<p id="title">
+					MATT
+					<span style="color: rgb(233, 0, 0)">KEIBACH</span>
+				</p>
+				<p id="sub-landing-text">
+					Helping People live happier, healthier lives through improved fitness,
+					nutrition & mindset.
+				</p>
+				<button
+					id="landing-btn"
+					onclick="scrollToElementWithOffset('contact-area')"
+				>
+					Free Consultation
+				</button>
+			</div>
+			<div id="landing-socials-area">
+				<img src="./assets/instagram.png" />
+				<img src="./assets/facebook.png" />
+				<img src="./assets/linkedin.png" />
+			</div>
+		</div>
+		<div class="wrapper">
+			<div id="intro-area">
+				<p id="intro-title">MAKE FITNESS YOUR<br />PRIORITY.</p>
+				<div id="intro-flex">
+					<div id="intro-left">
+						<p id="il-title">MAXIMIZE YOUR LIFE</p>
+						<p class="intro-sub">
+							Stop waiting to get in shape! I will help you sculpt the body that
+							fits your lifestyle and I'll help you maintain it through all
+							aspects of life. Why give up the things you love to do? I will
+							walk you through every step of transforming your body from
+							nutrition to exercise all the way down to your molecular
+							structure.
+						</p>
+						<p class="intro-sub">
+							Personalization is key to getting the best possible results, which
+							is why my workout programs are modified to fit your individual
+							fitness goals and fitness level. Whether you're new to working out
+							or you're an experienced fitness buff my fitness masterclass is
+							designed for you to achieve your goals and to enjoy your life!
+						</p>
+						<button
+							id="il-btn"
+							onclick="scrollToElementWithOffset('contact-area')"
+						>
+							Free Consultation
+						</button>
+					</div>
+					<div id="intro-right">
+						<div class="ir-card">
+							<img src="./assets/icon1.png" />
+							<p class="ir-card-title">Body Analysis</p>
+							<div class="ir-card-divider"></div>
+							<p class="ir-card-text">
+								I usually start my consultations off by performing an in-depth
+								health assessment, using functional movement screenings and a
+								body composition analysis, to gauge your most accurate fitness
+								level.
+							</p>
+						</div>
+						<div class="ir-card">
+							<img src="./assets/icon2.png" />
+							<p class="ir-card-title">Fitness Programs</p>
+							<div class="ir-card-divider"></div>
+							<p class="ir-card-text">
+								Once fitness levels have been assessed, I design a custom
+								workout routine for your goals, time constraints, & budget. I
+								encourage, motivate & guide you to reach your health and fitness
+								goals on a personalized level.
+							</p>
+						</div>
+						<div class="ir-card">
+							<img src="./assets/icon3.png" />
+							<p class="ir-card-title">Health & Nutrition</p>
+							<div class="ir-card-divider"></div>
+							<p class="ir-card-text">
+								Once fitness levels have been assessed, I design a custom
+								workout routine for your goals, time constraints, & budget. I
+								encourage, motivate & guide you to reach your health and fitness
+								goals on a personalized level.
+							</p>
+						</div>
+						<div class="ir-card" id="ir-card-4">
+							<img src="./assets/icon4.png" />
+							<p class="ir-card-title">Flexibility</p>
+							<div class="ir-card-divider"></div>
+							<p class="ir-card-text">
+								Once fitness levels have been assessed, I design a custom
+								workout routine for your goals, time constraints, & budget. I
+								encourage, motivate & guide you to reach your health and fitness
+								goals on a personalized level.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pt-area">
+			<div class="wrapper">
+				<div id="pt-flex">
+					<div id="pt-left">
+						<p id="ptl-title">FITNESS PROGRAMS</p>
+						<img
+							src="https://assets.website-files.com/5df6d99035688cba82155593/5dfab759f91dc5ef0bb14a0d_MATTTS%20GYMMM.svg"
+							id="responsive-img"
+						/>
+						<p class="ptl-text">
+							Getting in shape shouldn’t be a punishment. It’s an amazing and
+							empowering lifestyle decision that anyone can achieve. I believe
+							in finding the pleasurable side of fitness, and while there may be
+							sore muscles along the way, the amount of fun and levels of energy
+							you will experience will far exceed the discomfort.
+						</p>
+						<p class="ptl-text">
+							While Specializing in weight loss training, I also offer many
+							other types of personal training programs that are designed around
+							your needs, including individualized programs, athletic & sports
+							training, cardiovascular conditioning & functional fitness, muscle
+							building, muscle toning, injury rehab, mind-body connection,
+							nutrition coaching, fitness for seniors and more.
+						</p>
+						<button
+							id="pt-btn"
+							onclick="scrollToElementWithOffset('contact-area')"
+						>
+							Free Consultation
+						</button>
+					</div>
+					<div id="pt-right">
+						<img
+							src="https://assets.website-files.com/5df6d99035688cba82155593/5dfab759f91dc5ef0bb14a0d_MATTTS%20GYMMM.svg"
+							id="pc-img"
+						/>
+						<div id="pt-flex-grid">
+							<div class="pt-card">
+								<img src="./assets/pt-icon1.png" />
+								<p>WEIGHT LOSS</p>
+							</div>
+							<div class="pt-card">
+								<img src="./assets/pt-icon2.png" />
+								<p>BODY BUILDING</p>
+							</div>
+							<div class="pt-card">
+								<img src="./assets/pt-icon3.png" />
+								<p>BOOT CAMP</p>
+							</div>
+							<div class="pt-card">
+								<img src="./assets/pt-icon4.png" />
+								<p>CIRCUIT TRAINING</p>
+							</div>
+							<div class="pt-card">
+								<img src="./assets/pt-icon5.png" />
+								<p>GROUP TRAINING</p>
+							</div>
+							<div class="pt-card">
+								<img src="./assets/pt-icon6.png" />
+								<p>HEALTH & NUTRITION</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper" id="health-and-nutrition">
+			<p class="large-divider-title">
+				80% OF STAYING FIR IS <span>FOOD</span>.
+			</p>
+			<div class="large-divider"></div>
+			<p id="hn-title">HEALTH & NUTRITION</p>
+			<p class="hn-sub">
+				Everyday food choices are guided by a number of considerations—emotions,
+				habits, fast-paced lifestyles, traditions, social influences, religion,
+				and pleasure. Let me help you feel confident in your diet choices while
+				still enjoying the foods that you love with one-on-one nutrition
+				counseling sessions. Whether your goal is to lose weight, lower
+				cholesterol, or optimize your health, having me as your private
+				nutrition coach provides the support you need to stay on track and keep
+				yourself motivated.
+			</p>
+			<div id="hn-cards">
+				<div class="hn-card">
+					<img src="./assets/hn-icon1.png" />
+					<p>PREMIUM HEALTH</p>
+				</div>
+				<div class="hn-card">
+					<img src="./assets/hn-icon2.png" />
+					<p>QUALITY NUTRITION</p>
+				</div>
+				<div class="hn-card">
+					<img src="./assets/hn-icon3.png" />
+					<p>MEAL PLANS</p>
+				</div>
+			</div>
+			<p id="hn-sub-text">
+				As part of all of my training programs, you’ll work one-on-one with me
+				as your nutrition coach to develop a plan that meets you where you’re
+				starting, no matter what your goal or your experience level is.
+			</p>
+		</div>
+		<div id="contact-area">
+			<div id="half-background"></div>
+			<p id="contact-title">
+				GET STARTED WITH A <span>FREE</span> CONSULTATION
+			</p>
+			<div id="contact-flex">
+				<div id="contact-left">
+					<p id="contact-left-title">ONE FREE <span>WORKOUT</span></p>
+					<p class="contact-left-text">
+						My Workouts are designed to overcome all plateaus.
+					</p>
+					<p class="contact-left-text">
+						It is a system that works every time because I have stripped
+						everything that is arbitrary from it. In a nutshell, I leave nothing
+						to chance and cover every single variable vital to achieving rapid
+						growth. It’s not easy, in fact if you want to make great gains or
+						lose weight it can be extremely hard work, but if you work it
+						properly it always delivers.
+					</p>
+					<p class="contact-left-text">Get started with a FREE Consultation.</p>
+					<p id="sign-off">- MATT</p>
+				</div>
+				<div id="contact-right">
+					<div class="contact-input">
+						<label>Name</label>
+						<input type="text" placeholder="Full Name" />
+					</div>
+					<div class="contact-input">
+						<label>Email</label>
+						<input type="text" placeholder="Email Address" />
+					</div>
+					<div class="contact-input">
+						<label>Phone</label>
+						<input type="number" placeholder="Phone Number" />
+					</div>
+					<div id="contact-form-checks">
+						<div class="form-check">
+							<input type="checkbox" name="wl" id="wl" />
+							<label for="wl">WEIGHT LOSS</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" name="bb" id="bb" />
+							<label for="bb">BODY BUILDING</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" name="bc" id="bc" />
+							<label for="bc">BOOT CAMP</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" name="ct" id="ct" />
+							<label for="ct">CIRCUIT TRAINING</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" name="gt" id="gt" />
+							<label for="gt">GROUP TRAINING</label>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" name="nu" id="nu" />
+							<label for="nu">NUTRITION</label>
+						</div>
+					</div>
+					<div class="contact-input">
+						<label>How Can I Help?</label>
+						<textarea id="contact-msg" placeholder="Have Questions?"></textarea>
+					</div>
+					<button id="send-btn"><img src="assets/send.png" /> Send</button>
+				</div>
+			</div>
+			<div id="phone-area">
+				<p id="phone-num">509-216-9200</p>
+				<p id="phone-text">CALL ME TODAY</p>
+			</div>
+		</div>
+		<footer>
+			<div id="footer-flex">
+				<div id="f-col-1">
+					<img src="./assets/logo.png" id="footer-logo" />
+				</div>
+				<div id="f-col-2">
+					<p id="col-2-title">MATT KIEBACH©</p>
+					<div id="col-2-links">
+						<a onclick="scrollToElementWithOffset('intro-area')">About Me</a>
+						<a onclick="scrollToElementWithOffset('pt-area')"
+							>Personal Training</a
+						>
+						<a onclick="scrollToElementWithOffset('health-and-nutrition')"
+							>Nutrition</a
+						>
+					</div>
+					<p class="col-2-sub-text">MATTKIEBACH © 2023 ALL RIGHTS RESERVED</p>
+					<p class="col-2-sub-text">WEBSITE DEVELOPED BY DOMINICBLACK.COM.AU</p>
+				</div>
+				<div id="f-col-3">
+					<p>REGISTER FOR WEEKLY NEWSLETTER</p>
+					<input placeholder="Name" type="text" />
+					<input placeholder="Email" type="text" />
+					<div style="width: 90%; text-align: left; margin-top: 10px">
+						<button id="newsletter-submit">SUBMIT</button>
+					</div>
+				</div>
+				<div id="f-col-2" class="f-col-2-res">
+					<p id="col-2-title">MATT KIEBACH©</p>
+					<div id="col-2-links">
+						<a onclick="scrollToElementWithOffset('intro-area')">About Me</a>
+						<a onclick="scrollToElementWithOffset('pt-area')"
+							>Personal Training</a
+						>
+						<a onclick="scrollToElementWithOffset('health-and-nutrition')"
+							>Nutrition</a
+						>
+					</div>
+					<p class="col-2-sub-text">MATTKIEBACH © 2023 ALL RIGHTS RESERVED</p>
+					<p class="col-2-sub-text">WEBSITE DEVELOPED BY DOMINICBLACK.COM.AU</p>
+				</div>
+			</div>
+		</footer>
+		<script src="scripts/main.js" defer></script>
+	</body>
+</html>
